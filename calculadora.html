@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora do Guru</title>
+    <link rel="stylesheet" href="calculadora.css">
+    <script src="calculadora.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="shortcut icon" href="imagemSiteCalculadora.png" type="image/x-icon">
+
+</head>
+<body>
+   
+        <h2 class="titulo">Calculadora do Guru</h2>
+
+        <div class="formulario">
+          <form action="calculadora.php" method="post" onsubmit="return validarForm()">
+
+              <div>
+                <div class="row g-3 align-items-center">
+                    <div class="col-auto">
+                      <label for="alcool" class="col-form-label">Digite o valor do Álcool</label>
+                    </div>
+              </div>
+
+              
+                    <div class="col-auto">
+                      <input type="text" id="alcool" class="form-control" aria-describedby="avisoAlcool" name="alcool" placeholder="Preço por litro">
+                    </div>
+              
+                    <div class="col-auto">
+                      <span id="avisoAlcool" class="form-text">
+                        Digite um valor numérico!
+                      </span>
+                    </div>
+                  </div>
+    
+                <div>
+                  <div class="row g-3 align-items-center">
+                    <div class="col-auto">
+                      <label for="gasolina" class="col-form-label">Digite o valor da Gasolina</label>
+                    </div>
+                  </div>
+
+                    <div class="col-auto">
+                      <input type="text" id="gasolina" class="form-control" aria-describedby="avisoGasolina" name="gasolina" placeholder="Preço por litro">
+                    </div>
+
+                    <div class="col-auto">
+                      <span id="avisoGasolina" class="form-text">
+                        Digite um valor numérico!
+                      </span>
+                    </div>
+                  </div>
+        </div>
+
+        
+        <div class="botao">
+            <button type="submit" class="btn btn-primary">Calcular</button>
+        </div>
+
+</body>
+</html>

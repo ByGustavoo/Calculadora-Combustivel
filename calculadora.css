@@ -1,0 +1,41 @@
+* {
+    margin: 0;  
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    background-color: #ffffff;
+}
+
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    padding-top: 7%;
+    padding-bottom: 5%;
+    font-size: 30px;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+.col-auto {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2%;
+}
+
+
+.form-text {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 12%;
+    padding-top: 5%;
+}
